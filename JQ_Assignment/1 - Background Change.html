@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Change</title>
+    <style>
+      .main {
+        height: 100vh;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .sub1 {
+        height: 200px;
+        width: 100px;
+        background-color: red;
+      }
+      .sub2 {
+        height: 200px;
+        width: 100px;
+        background-color: green;
+      }
+      .sub3 {
+        height: 200px;
+        width: 100px;
+        background-color: blue;
+      }
+      .sub4 {
+        height: 200px;
+        width: 100px;
+        background-color: orange;
+      }
+      .sub5 {
+        height: 200px;
+        width: 100px;
+        background-color: yellowgreen;
+      }
+      .sub6 {
+        height: 200px;
+        width: 100px;
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="sub1"></div>
+      <div class="sub2"></div>
+      <div class="sub3"></div>
+      <div class="sub4"></div>
+      <div class="sub5"></div>
+      <div class="sub6"></div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      $(".sub1").click(function () {
+        $(".main").css("background-color", "red");
+      });
+    });
+    $(document).ready(function () {
+      $(".sub2").click(function () {
+        $(".main").css("background-color", "green");
+      });
+    });
+    $(document).ready(function () {
+      $(".sub3").click(function () {
+        $(".main").css("background-color", "blue");
+      });
+    });
+    $(document).ready(function () {
+      $(".sub4").click(function () {
+        $(".main").css("background-color", "orange");
+      });
+    });
+    $(document).ready(function () {
+      $(".sub5").click(function () {
+        $(".main").css("background-color", "yellowgreen");
+      });
+    });
+    $(document).ready(function () {
+      $(".sub6").click(function () {
+        $(".main").css("background-color", "purple");
+      });
+    });
+  </script>
+</html>

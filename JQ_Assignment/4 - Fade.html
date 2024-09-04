@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fade</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .main {
+        background-color: aliceblue;
+        height: 400px;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 150px;
+        padding: 20px;
+      }
+      h1 {
+        text-align: left;
+      }
+      .sub {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .sub1 {
+        height: 250px;
+        width: 250px;
+        background-image: url(http://surl.li/sgjjfr);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .sub2 {
+        height: 250px;
+        width: 250px;
+        background-image: url(http://surl.li/sgjjfr);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .sub3 {
+        height: 250px;
+        width: 250px;
+        background-image: url(http://surl.li/sgjjfr);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      button {
+        margin-left: 675px;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: rgb(232, 235, 227);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>JQuery Fade Effect</h1>
+      <div class="sub">
+        <div class="sub1"></div>
+        <div class="sub2"></div>
+        <div class="sub3"></div>
+      </div>
+      <button>Show</button>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        $(".sub1").fadeToggle(3000);
+        $(".sub2").fadeToggle("slow");
+        $(".sub3").fadeToggle();
+      });
+    });
+  </script>
+</html>

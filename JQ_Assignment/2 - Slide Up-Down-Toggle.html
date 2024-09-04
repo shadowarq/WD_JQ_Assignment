@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide Up-Down-Toggle[</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(30, 13, 13);
+      }
+
+      .main {
+        color: #333;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .box {
+        text-align: center;
+        height: 400px;
+        width: auto;
+        background-color: #ffd000;
+        border-radius: 0 0 10px 10px;
+      }
+      h1 {
+        padding-top: 160px;
+      }
+      button {
+        padding: 15px 22px;
+        cursor: pointer;
+        margin: 20px 10px 0 10px;
+        background: #ffd000;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+      }
+      .triggers {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="box">
+        <h1>SlideToggle / SlideUP / SLideDown</h1>
+      </div>
+      <div class="triggers">
+        <button id="up">Slide Up</button>
+        <button id="down">Slide Down</button>
+        <button id="toggle">Toggle</button>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      $("#up").click(function () {
+        $(".box").slideUp(3000);
+      });
+    });
+    $(document).ready(function () {
+      $("#down").click(function () {
+        $(".box").slideDown(3000);
+      });
+    });
+    $(document).ready(function () {
+      $("#toggle").click(function () {
+        $(".box").slideToggle(3000);
+      });
+    });
+  </script>
+</html>
